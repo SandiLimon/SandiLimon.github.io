@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de pedido</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="shortcut icon" href="images/Logo2.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>SANDI-LIMÓN S.A.</h1>
+        <h3>PLAN LAS MESAS, CANTÓN UPATORO</h3>
+        <h3>CHALATENANGO, CHALATENANGO, EL SALVADOR</h3>
+        <h3>TEL. 70853033</h3>
+
+        
+        <h2 id="factura-numero" class="factura-numero"></h2>
+        <div id="fecha-hora" class="fecha-hora"></div>
+        <div class="resumen-carrito" id="resumen-carrito"></div>
+
+            
+        <h5 class="separador">--------------------------------------------------------------------------</h5>
+        <p class="total" id="resumen-total"></p>
+        <h5 class="separador">--------------------------------------------------------------------------</h5>
+
+        <b><h1>Datos Cliente</h1></b>
+        <div class="datos" id="datos">
+            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+            <p><strong>Apellido:</strong> <span id="apellido"></span></p>
+            <p><strong>Dirección:</strong> <span id="direccion"></span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+            <h5 class="separador">--------------------------------------------------------------------------</h5>
+            <h3 class="gracias">*** GRACIAS POR SU COMPRA ***</h3>
+            <div class="imagenes">
+                <img src="images/Logo2.png" alt="Logo de la empresa" class="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="botones">
+        <button class="boton-imprimir" onclick="imprimir()">Imprimir</button>
+        <a href="tarjeta.html">
+            <button class="boton-pagar">Pagar Con Tarjeta</button>
+        </a>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

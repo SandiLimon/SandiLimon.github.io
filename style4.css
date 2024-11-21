@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: none !important;
+  margin: 20px;
+}
+
+
+h1, h2, h3 {
+  color: #333;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: space-evenly; 
+}
+
+.productos h2 {
+  color: black;
+  text-align: center;
+}
+
+.carrito {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carrito h2 {
+  color: black;
+  font-size: 40px;
+}
+
+.producto {
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: 1 1 22%; 
+  box-sizing: border-box;
+  text-align: center; 
+}
+
+.producto img {
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.producto h3 {
+  font-size: 18px; 
+  margin-bottom: 10px;
+}
+
+.producto p {
+  font-size: 14px; 
+  margin-bottom: 10px;
+}
+
+.producto button {
+  padding: 10px 15px; 
+  font-size: 14px; 
+}
+
+#lista-carrito {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#total-carrito {
+  font-weight: bold;
+}
+
+button {
+  background-color: #F35200;
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 4px;
+  cursor: pointer;
+}
+
+.btn-3 {
+  background-color: #F35200;
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.derechos2 {
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.imagen-estatica {
+  position: fixed;
+  top: 50px; 
+  left: 50px; 
+  z-index: -1; 
+}
+
+@media (max-width: 768px) {
+  .productos {
+    justify-content: center; 
+    width: 100%;
+  }
+
+  .producto {
+    flex: 1 1 45%; 
+  }
+
+  .carrito {
+    width: 100%; 
+    max-width: none;
+  }
+
+  .imagen-estatica {
+    top: 10px;
+    left: 10px;
+    margin-left: 0;
+  }
+
+  .derechos2 {
+    position: relative;
+    top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+    flex: 1 1 100%; 
+  }
+  
+  .carrito h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en Línea</title>
+  <link rel="stylesheet" type="text/css" href="style4.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="shortcut icon" href="images/Logo2.png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="menu container">
+      <input type="checkbox" id="menu">
+      <label for="menu">
+       
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html"><img src="images/casa-icono-silueta.png" alt="Inicio" class="icon"></a></li>
+        </ul>
+      </nav>
+      </nav>
+    </div>
+  </header>
+  <main class="productos container">
+    <h2>PRODUCTOS</h2>
+      <div class="producto">
+        <h3>Limonada de Sandía</h3>
+        <img src="images/Mambo-limonada-de-sandía.jpg" alt="Limonada de Sandía" class="img-pro">
+        <p>Precio: $3.45</p>
+        <button onclick="agregarAlCarrito('Limonada de Sandía', 3.45)" class="btn-3">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <h3>Limonada de Sandía</h3>
+        <img src="images/Mambo-limonada-de-sandía.jpg" alt="Limonada de Sandía" class="img-pro">
+        <p>Precio: $3.45</p>
+        <button onclick="agregarAlCarrito('Limonada de Sandía', 3.45)" class="btn-3">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <h3>Limonada de Sandía</h3>
+        <img src="images/Mambo-limonada-de-sandía.jpg" alt="Limonada de Sandía" class="img-pro">
+        <p>Precio: $3.45</p>
+        <button onclick="agregarAlCarrito('Limonada de Sandía', 3.45)" class="btn-3">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="images/SandiLimón.png" alt="Limonada de Sandía" class="img-pro">
+      </div>
+  </main>
+  <aside class="carrito container">
+    <h2>CARRITO</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0.00</p>
+    <button onclick="mostrarResumen()">Realizar pedido</button>
+    <button onclick="reiniciarCarrito()">Reiniciar carrito</button>
+  </aside>
+  <footer class="footer container">
+    <img src="images/Logo2.png" alt="Logo de la tienda">
+  </footer>
+  <script src="script3.js"></script>
+</body>
+</html>

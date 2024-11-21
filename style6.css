@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(135deg, #ffd2d1 0%, #ffcbd0 8.33%, #ffc2cf 16.67%, #ffb9cf 25%, #fcb0cf 33.33%, #f3a5cf 41.67%, #e79bd0 50%, #d992d2 58.33%, #c88ad5 66.67%, #b685d8 75%, #a182dc 83.33%, #8881e0 91.67%, #6b81e3 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.Logo-contactos img {
+    width: 225px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wrapper {
+    margin-top: 20px; 
+    width: 90%;
+    max-width: 550px; 
+}
+
+.wrapper ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    gap: 10px; 
+}
+
+.wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper ul li .fa {
+    font-size: 1.5rem; 
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+}
+
+.wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+}
+
+.wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+}
+
+.wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+}
+
+.wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+}
+
+.wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+}
+
+.wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+}
+
+.wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper ul li {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper ul li {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;700;800&display=swap');
